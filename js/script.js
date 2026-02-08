@@ -1,3 +1,9 @@
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('menu-toggle').checked = false;
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // Intersection Observer for the "reveal" fade-in animation
     const observer = new IntersectionObserver((entries) => {
@@ -10,14 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 0.1 // Triggers when 10% of the element is visible
     });
 
-    // Select all elements with the 'reveal' class and start observing
     const revealElements = document.querySelectorAll('.reveal');
     revealElements.forEach((el) => observer.observe(el));
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     const textElement = document.getElementById('running-text');
-    const textToType = "Hi Welcome to my Portfolio";
+    const textToType = "Hello, Welcome to my Portfolio!";
     let index = 0;
 
     function startTyping() {
@@ -34,10 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function resetAndRepeat() {
-        // Reset Phase
-        textElement.textContent = ""; // Clear the text
-        index = 0; // Reset the counter
-        startTyping(); // Start again
+        textElement.textContent = ""; 
+        index = 0; 
+        startTyping(); 
     }
 
     // Initialize the first run
