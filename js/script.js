@@ -4,8 +4,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Intersection Observer for the "reveal" fade-in animation
+document.addEventListener('DOMContentLoaded', () => {n
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
