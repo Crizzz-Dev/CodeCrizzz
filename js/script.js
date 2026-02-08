@@ -4,7 +4,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {n
+document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
