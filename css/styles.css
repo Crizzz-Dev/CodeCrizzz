@@ -759,6 +759,38 @@ body {
 }
 
 /* ------------------------Responsive-------------------- */
+
+
+@media (max-width: 900px) {
+    .content-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .bio-flex-row {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .profile-image-container {
+        width: 220px;  
+        height: 220px; 
+        margin-bottom: 20px;
+    }
+
+    .bio-details h2 {
+        font-size: 1.5rem;
+    }
+    .bio-details p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .info-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -832,9 +864,6 @@ body {
         position: fixed; 
         right: 10%;
     }
-}
-
-@media (max-width: 768px) {
     
     .home-page {
         height: 100vh; 
@@ -856,47 +885,6 @@ body {
         align-items: center;
     }
 
-    .project-grid {
-        grid-template-columns: 1fr; 
-        gap: 20px;
-    }
-
-    .project-container {
-        margin: 30px auto;
-    }
-}
-
-@media (max-width: 900px) {
-    .content-grid {
-        grid-template-columns: 1fr; 
-    }
-
-    .bio-flex-row {
-        flex-direction: column; 
-        text-align: center; 
-    }
-
-    .profile-image-container {
-        width: 220px;  
-        height: 220px; 
-        margin-bottom: 20px;
-    }
-
-    .bio-details h2 {
-        font-size: 1.5rem;
-    }
-    .bio-details p {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 850px) {
-    .info-grid-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 768px) {
     .bio-flex-row { 
         flex-direction: column; 
         text-align: center; 
@@ -926,6 +914,24 @@ body {
      .school-name {
         font-size: 0.95rem;
     }
+
+    .project-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .project-container {
+        margin: 30px auto;
+    }
+   
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form {
+        padding: 25px;
+    }
+    
 }
 
 @media (max-width: 600px) {
@@ -948,24 +954,14 @@ body {
     .bio-details p {
         font-size: 0.9rem;
     }
+}
 
-    @media (max-width: 768px) {
-        .contact-grid {
-            grid-template-columns: 1fr;
-        }
-        
-        .contact-form {
-            padding: 25px;
-        }
+@media (max-width: 400px) {
+    .project-grid {
+        grid-template-columns: 1fr;
     }
-
-    @media (max-width: 400px) {
-        .project-grid {
-            grid-template-columns: 1fr;
-        }
-        
-        .project-card {
-            height: 250px;
-        }
+    
+    .project-card {
+        height: 250px;
     }
 }
